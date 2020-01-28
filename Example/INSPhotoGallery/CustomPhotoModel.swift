@@ -20,6 +20,8 @@ class CustomPhotoModel: NSObject, INSPhotoViewable {
     var imageURL: URL?
     var thumbnailImageURL: URL?
     
+    var videoURL: NSURL?
+    
     var attributedTitle: NSAttributedString? {
         #if swift(>=4.0)
         return NSAttributedString(string: "Example caption text", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
